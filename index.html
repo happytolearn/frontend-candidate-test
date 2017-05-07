@@ -15,6 +15,114 @@
     <section class="application-container">
   
 
+        <div class="card-form">
+        <h1>hCard Builder</h1>
+        <form>
+            <fieldset>
+                <legend>PERSONAL DETAILS</legend>
+                <div class="form-group">
+                    <label for="givenName" >GIVEN NAME</label>
+                    <input type="text" id="givenName" data-preview="preview_given-name">
+                </div>
+                <div class="form-group">
+                    <label for="surName">SURNAME</label>
+                    <input type="text" id="surName" data-preview="preview_surname">
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" data-preview="preview_email">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">PHONE</label>
+                    <input type="text" id="phoneNumber" data-preview="preview_phone">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>ADDRESS</legend>
+                <div class="form-group">
+                    <label for="houseName">HOUSE NAME OR #</label>
+                    <input type="text" id="houseName"data-preview="preview_house" >
+                </div>
+                <div class="form-group">
+                    <label for="street">STREET</label>
+                    <input type="text" id="street" data-preview="preview_street">
+                </div>
+                <div class="form-group">
+                    <label for="suburb">SUBURB</label>
+                    <input type="text" id="suburb" data-preview="preview_suburb">
+                </div>
+                <div class="form-group">
+                    <label for="state">STATE</label>
+                    <input type="text" id="state" data-preview="preview_state">
+                </div>
+                <div class="form-group">
+                    <label for="postcode">POSTCODE</label>
+                    <input type="text" id="postcode" data-preview="preview_postcode">
+                </div>
+                <div class="form-group">
+                    <label for="country">COUNTRY</label>
+                    <input type="text" id="country"data-preview="preview_country" >
+                </div>
+            </fieldset>
+            <div class="button-area">
+                <div class="form-group">
+              <input type="file" value="Upload Avatar" id="upload-button" >
+                </div>
+                <div class="form-group">
+          <input type="submit" value="Create  hCard" id="submit-button" >
+                </div>
+        </div>
+
+        </form>
+        </div>
+
+        <div class="preview-block">
+            <div class="card-preview">
+                <h2>HCARD PREVIEW</h2>
+                <div class="preview-header">
+                    <h3>
+                        <span id="preview_given-name"></span>
+                        <span id="preview_surname"></span>
+                    </h3>
+                    
+                    <div id="preview-img" class="preview-img" alt="Customer's image for preview'" title="Customer image"></div>
+                </div>
+            <div class="preview-information">
+                <div class="info-block">
+                    <span class="info-label">Email</span>
+                    <span class="info-detail" id="preview_email"></span>
+                </div><div class="info-block">
+                    <span class="info-label">PHONE</span>
+                    <span class="info-detail" id="preview_phone"></span>
+
+                </div>
+                <div class="info-block">
+                    <span class="info-label">ADDRESS</span>
+                    <div class="info-detail">
+                        <span id="preview_house"></span>
+                        <span id="preview_street"></span>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <span class="info-label"></span>
+                    <div class="info-detail">
+                        <span id="preview_suburb"></span>
+                        <span id="preview_state"></span>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="col-50"><span class="info-label"  >POSTCODE</span>
+                    <span class="info-detail" id="preview_postcode"></span></div>
+                    <div class="col-50"><span class="info-label">COUNTRY</span>
+                    <span class="info-detail" id="preview_country"></span>
+                    <div class="col-50">
+                </div>
+
+            </div>
+            </div>
+        </div>
+
     </section>
     <!--Scripts included-->
     <script src="js/custom.js"></script>
