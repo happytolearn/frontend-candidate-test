@@ -1,62 +1,53 @@
 @font-face{font-family:'Helvetica';src:url(../fonts/helvetica-normal.ttf)}
-
-
-*{box-sizing:border-box; font-family: 'Helvetica';}
-body{background:#E7E9EC;}
+*{box-sizing:border-box;font-family:'Helvetica'}
+body{background:#E7E9EC}
 h1{color:#394F63}
 h2{color:#ACAEB1;float:right;margin:0;font-size:16px}
 h3{color:#FFF}
-.col-50 {
-    float: left;
-    width: 50%;
-}
-.card-form{width:45%;float:left;background:#FFF;height: 100vh;}
-.form-group{width:50%;float:left;padding:10px}
+.col-50{float:left;width:50%}
+.card-form{float:left;background:#FFF}
+.form-group{width:50%;float:left;padding:2%}
 fieldset{padding:0;border:0}
-legend{width:100%;margin-bottom:20px;border-bottom:1px solid #BDC5C8;color:#BDC5C8;font-size:12px;padding-bottom:5px}
+fieldset + fieldset{margin-top:20px}
+legend{width: 96%;margin: 0 auto 20px;border-bottom:1px solid #BDC5C8;color:#BDC5C8;font-size:12px;padding-bottom:5px}
 input{width:100%;border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;height:30px}
 label{color:#394F63;font-size:13px}
-.preview-block{width:55%;float:left}
-.card-preview{width:80%;margin:100px auto;
--webkit-box-shadow:0px 3px #9a9a9a;
--moz-box-shadow: 0px 3px #9a9a9a;
-box-shadow: 0px 3px #9a9a9a;}
-.preview-header{height:100px;background:#394F63;clear:both;position: relative;}
+.preview-block{float:left}
+.card-preview{-webkit-box-shadow:0 3px #9a9a9a;-moz-box-shadow:0 3px #9a9a9a;box-shadow:0 3px #9a9a9a}
+.preview-header{height:100px;background:#394F63;clear:both;position:relative}
+.preview-header h3{position:absolute;bottom:0;left:10px}
 .preview-information{background:#FFF}
-.info-block{border-bottom:1px solid #BDC5C8;padding:5px 0;     overflow: hidden;}
-.info-label{color:#394F63;font-size:13px;width:20%;display:inline-block}
+.info-block{border-bottom:1px solid #BDC5C8;min-height: 30px;line-height: 30px;overflow:hidden}
+.info-label{color:#394F63;font-size:13px;display:inline-block}
 .preview-information{background:#FFF;padding:20px 15px}
-.info-detail {
-    display: inline;
+.info-detail{display:inline}
+.preview-img{background-image:url(../images/icon.PNG);background-size:cover;background-position:center;height:100px;width:90px;border:1px solid #bbb;position:absolute;right:18px;bottom:-14px}
+.button-area input,.uploadfile + label{height:40px;font-size:16px;font-weight:100;color:#fff;border:0;border-radius:5px;text-align:center;cursor:pointer}
+.submit-button{background-color:#3498db;box-shadow:0 3px #2980b9}
+.submit-button:hover{background-color:#2980b9}
+.uploadfile{width:.1px;height:.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1}
+.uploadfile + label{background-color:#758E9D;box-shadow:0 3px #2d4350;display:inline-block;line-height:40px;width:100%}
+.uploadfile:focus + label,.uploadfile + label:hover{background-color:#2d4350}
+@media only screen and (min-width : 320px) {
+.card-form{width:100%;height:auto;padding-bottom:20px}
+.form-group{width:100%}
+.preview-block{width:100%}
+.card-preview{width:95%;margin: 20px auto;}
+.info-label{width:100%}
 }
-.button-area input{
-    height: 50px;
-    font-size: 16pt;
-    font-weight: 100;
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    text-align: center;
+@media only screen and (min-width : 480px) {
+.form-group{width:50%}
 }
-
-.preview-img {
-    background-image: url(../images/icon.PNG);
-    background-size: cover;
-    background-position: center;
-    height: 100px;
-    width: 90px;
-    border: 1px solid #bbb;
-    position: absolute;
-    right: 18px;
-    bottom: -14px;
+@media only screen and (min-width : 768px) {
+.preview-block{width:50%}
+.card-preview{width:90%;margin:100px auto}
+.card-form{width:50%;height:100vh}
+.info-label{width: 20%;}
+.col-50 .info-label{width: 40%;}
+.address-detail{margin-left: 20%;}
 }
-#submit-button {
-    background-color: #3498db;
-    box-shadow: 0px 3px #2980b9;
+@media only screen and (min-width : 992px) {
+.preview-block{width:55%}
+.card-preview{width:80%}
+.card-form{width:45%}
 }
-#upload-button {
-    background-color: #758E9D;
-    box-shadow: 0px 3px #2d4350;
-}
-
-

@@ -67,10 +67,12 @@
             </fieldset>
             <div class="button-area">
                 <div class="form-group">
-              <input type="file" value="Upload Avatar" id="upload-button" >
+                    <input type="file" id="upload-button" class="uploadfile"  />
+					<label for="upload-button">
+					<span>Upload Avatar</span></label>
                 </div>
                 <div class="form-group">
-          <input type="submit" value="Create  hCard" id="submit-button" >
+                    <input type="submit" value="Create  hCard" id="submit-button" class="submit-button" >
                 </div>
         </div>
 
@@ -105,8 +107,7 @@
                     </div>
                 </div>
                 <div class="info-block">
-                    <span class="info-label"></span>
-                    <div class="info-detail">
+                    <div class="info-detail address-detail">
                         <span id="preview_suburb"></span>
                         <span id="preview_state"></span>
                     </div>
