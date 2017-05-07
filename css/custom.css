@@ -24,7 +24,7 @@ label{color:#394F63;font-size:13px}
 .preview-img{background-image:url(../images/icon.PNG);background-size:cover;background-position:center;height:100px;width:90px;border:1px solid #bbb;position:absolute;right:18px;bottom:-14px}
 .button-area input,.uploadfile + label{height:40px;font-size:16px;font-weight:100;color:#fff;border:0;border-radius:5px;text-align:center;cursor:pointer}
 .submit-button{background-color:#3498db;box-shadow:0 3px #2980b9}
-.submit-button:hover{background-color:#2980b9}
+.submit-button:focus, .submit-button:hover{background-color:#2980b9}
 .uploadfile{width:.1px;height:.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1}
 .uploadfile + label{background-color:#758E9D;box-shadow:0 3px #2d4350;display:inline-block;line-height:40px;width:100%}
 .uploadfile:focus + label,.uploadfile + label:hover{background-color:#2d4350}

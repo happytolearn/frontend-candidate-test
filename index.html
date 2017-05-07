@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Domain Group Front End Developer challenge" />
-    <meta name="keywords" content="development challenge, front end developer" />
+    <meta name="description" content="hCard is a simple, open format for publishing people, companies and organizations on the web" />
+    <meta name="keywords" content="hCard generator, hCard builder" />
     <title>Front End Developer Test</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
@@ -17,7 +17,7 @@
 
         <div class="card-form">
         <h1>hCard Builder</h1>
-        <form>
+        <form onSubmit="return false;">
             <fieldset>
                 <legend>PERSONAL DETAILS</legend>
                 <div class="form-group">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="form-group">
                     <label for="phoneNumber">PHONE</label>
-                    <input type="text" id="phoneNumber" data-preview="preview_phone">
+                    <input type="text" id="phoneNumber"  data-preview="preview_phone">
                 </div>
             </fieldset>
 
@@ -58,7 +58,7 @@
                 </div>
                 <div class="form-group">
                     <label for="postcode">POSTCODE</label>
-                    <input type="text" id="postcode" data-preview="preview_postcode">
+                    <input type="text" id="postcode"  data-preview="preview_postcode">
                 </div>
                 <div class="form-group">
                     <label for="country">COUNTRY</label>
